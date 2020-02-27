@@ -1,0 +1,55 @@
+.sidenav-container{
+  height: 100%;
+}
+.grid-container {
+  margin: 20px;
+}
+
+#inp{
+  margin-right: 3rem;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+
+.mat-card{
+  height: 70vh;
+}
+
+
+.not img{
+  height:40vh;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 15vh;
+}
+
+mat-card-header{
+  height: 15vh;
+}
+
+#detimg{
+  height:40vh;
+  display:block;
+  margin:auto;
+}

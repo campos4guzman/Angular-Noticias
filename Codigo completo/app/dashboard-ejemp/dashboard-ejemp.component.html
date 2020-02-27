@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Buscar Noticias..." [(ngModel)]="busqueda" id="inp">
+          <button mat-flat-button (click)="evento1()">
+            Buscar
+          </button>
+        </mat-form-field>
+    </mat-toolbar>
+    <div class="grid-container">
+      <h1 class="mat-h1">Noticias</h1>
+      <mat-grid-list cols="3" rowHeight="40rem">
+        <mat-grid-tile *ngFor="let noticia of noticias">
+        <mat-card class="not">
+          <mat-card-header>
+            <mat-card-title>{{noticia.title}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src={{noticia.urlToImage}}>
+          <mat-card-actions>
+            <button mat-flat-button color="primary" (click)="detalle(noticia.title,noticia.urlToImage,noticia.publishedAt,noticia.description)">Mostrar</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
